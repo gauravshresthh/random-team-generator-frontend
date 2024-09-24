@@ -1,3 +1,6 @@
+run npm install inside this repo, run the node server in separate terminal and just run npm start inside this repo to run the backend and frotnend concurrently
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
