@@ -1,38 +1,83 @@
-.App {
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.home {
+  padding: 2rem 5rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
+  padding-bottom: 5rem;
+  color: rgb(0, 95, 29);
+  display: flex;
+  align-items: center;
+  gap: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_logo {
+  height: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button_container {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.player_management_table {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  margin-top: 2rem;
+  font-weight: 'bold';
+  padding-bottom: 0.5rem;
+}
+
+.actions_wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.generated_teams {
+  margin: 2rem 0;
+}
+
+.generated_teams_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.team-container {
+  border: 1px solid #ccc;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.team-name {
+  margin-bottom: 2rem;
+}
+
+.players-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete_button {
+  cursor: pointer;
 }
